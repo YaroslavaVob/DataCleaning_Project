@@ -1,3 +1,4 @@
+
 import numpy as np
 import pandas as pd
 
@@ -59,5 +60,3 @@ def find_outliers_z_score(data, feature, left=3, right=3, log_scale=False):
     cleaned = data[(x > lower_bound) & (x < upper_bound)]
     return outliers, cleaned
 
-def new_function():
-    pass
